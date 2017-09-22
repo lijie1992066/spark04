@@ -19,7 +19,7 @@ class xy {
 
 object xy {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("urlLocal").setMaster("local[2]")
+    val conf = new SparkConf().setAppName("urlLocal ").setMaster("local[2]")
     val sc = new SparkContext(conf)
 
     val rdd1 = sc.textFile("src/main/file/*.log1").map(x => {
